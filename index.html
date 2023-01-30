@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Donut-TicaTacToe</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="img/donut.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body onload="movePlayer2up()">
+    <header>
+
+
+
+        <div class="overlay">
+
+            <div id="points-player1" class="points"> 
+                <img src="img/donut.png">=0
+            </div>
+
+           <div class="overlay-center"> 
+             <p> TicTacToe</p> <span> Donut Edition </span>
+           </div>
+            <div id="points-player2" class="points"> 
+                <img src="img/gabel-und-messer-im-kreuz (2).png">=0
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <div class="display-win" id="win-display">
+
+    </div>
+
+    <div class="middle-section">
+        <div class="responsive-player-display"> 
+            <div class="playerimg" id="player1"> <img src="img/donut.png" id="player1-img">
+                <p> Player 1 </p>
+                <p id="turn-circle" style="min-height: 30px">  </p>
+            </div>
+
+            <div id="responsive-player2-position" class="playerimg">
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <td onclick="fillShape(0)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-0"> <img src="img/donut.png" class="d-none" id="circle-0"> </div>
+                </td>
+                <td onclick="fillShape(1)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-1"> <img src="img/donut.png" class="d-none" id="circle-1"> </div>
+                </td>
+                <td onclick="fillShape(2)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-2"> <img src="img/donut.png" class="d-none" id="circle-2"> </div>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(3)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-3"> <img src="img/donut.png" class="d-none" id="circle-3"> </div>
+                </td>
+                <td onclick="fillShape(4)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-4"> <img src="img/donut.png" class="d-none" id="circle-4"> </div>
+                </td>
+                <td onclick="fillShape(5)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-5"> <img src="img/donut.png" class="d-none" id="circle-5"> </div>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(6)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-6"> <img src="img/donut.png" class="d-none" id="circle-6"> </div>
+                </td>
+                <td onclick="fillShape(7)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-7"> <img src="img/donut.png" class="d-none" id="circle-7"> </div>
+                </td>
+                <td onclick="fillShape(8)">
+                    <div class="center-td"> <img src="img/gabel-und-messer-im-kreuz (2).png" class="d-none"
+                            id="cross-8"> <img src="img/donut.png" class="d-none" id="circle-8"> </div>
+                </td>
+            </tr>
+
+
+
+        </table>
+
+
+        <div class="playerimg">
+             <div id="player2">
+               <img src="img/gabel-und-messer-im-kreuz (2).png" id="player2-img">
+                <p> Player 2 </p>
+                <p id="turn-cross" style="min-height: 30px"> Your turn! </p>
+            </div>
+        </div>
+    </div> <!-- end middle selection -->
+
+    <div class="note-section " id="note-section">
+
+    </div>
+    <div class="restart-btn-bg" id="restart-btn" style="display:none" onclick="restartGame()"> 
+        <button class="restart-btn ">
+            <div class="restart-button-div">
+                <img src="img/donut.png">
+                Neustart
+                <img src="img/gabel-und-messer-im-kreuz (2).png">
+            </div>
+</button>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<!--
+    
+    <a href="https://www.flaticon.com/de/kostenlose-icons/gabel" title="gabel Icons">Gabel Icons erstellt von Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/donut" title="donut icons">Donut icons created by Freepik - Flaticon</a>
+
+
+Hallo zusammen, ich würde gerne mein TicTacToe abgeben.
+
+Bitte beachten, dass beim responsive testen über unter 700px neu geladen werden muss. Da eine JS funktion über Media Querry geht und nur geladen wird bei Onload.
+Funktion ist eine der letzten in JS.Datei. Danke =)
+https://sinan-fischer.developerakademie.net/tictactoe/index.html
+-->
